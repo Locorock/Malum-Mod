@@ -47,7 +47,7 @@ public class EldritchWickedRiteType extends TotemicRiteType {
             public void doRiteEffect(TotemBaseBlockEntity totemBase, ServerLevel level) {
                 DamageSource damageSource = DamageTypeHelper.create(level, MalumDamageTypes.VOODOO_PLAYERLESS);
                 Map<Class<? extends Animal>, List<Animal>> animalMap = getNearbyEntities(totemBase, Animal.class,
-                        e -> e.getAge() > 0 && !e.isInvulnerableTo(damageSource)).collect(Collectors.groupingBy(Animal::getClass));
+                        e -> e.getAge() == 0 && !e.isInvulnerableTo(damageSource)).collect(Collectors.groupingBy(Animal::getClass));
                 for (List<Animal> animals : animalMap.values()) {
                     if (animals.size() < 20) {
                         continue;
