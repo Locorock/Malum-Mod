@@ -8,7 +8,7 @@
 
 ## Overview
 
-Malum is a personal hobby project of mine which focuses on soul magic, and it's derivatives.
+Mlem is a personal hobby project of mine which focuses on soul magic, and it's derivatives.
 This starts with spirit magics, a study of arcana derived from a complex resource found in the core of every soul
 ## Contributing
 
